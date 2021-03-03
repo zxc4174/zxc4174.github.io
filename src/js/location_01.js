@@ -53,29 +53,22 @@ infospot7.addEventListener('hover', () => {
     document.querySelector('#wait_me_audio').play();
 });
 
-// withdraw_the_lawsuit
-let infospot8 = new PANOLENS.Infospot(8000, '../images/location_01/withdraw_the_lawsuit.png');
-infospot8.position.set(-3500, -5000, -1000);
-infospot8.addEventListener('hover', () => {
-    document.querySelector('#withdraw_the_lawsuit_audio').play();
-});
-
 // you_are_stingy
-let infospot9 = new PANOLENS.Infospot(500, '../images/location_01/you_are_stingy.png');
-infospot9.position.set(840, 950, -1000);
-infospot9.addEventListener('hover', () => {
+let infospot8 = new PANOLENS.Infospot(500, '../images/location_01/you_are_stingy.png');
+infospot8.position.set(840, 950, -1000);
+infospot8.addEventListener('hover', () => {
     document.querySelector('#you_are_stingy_audio').play();
 });
 
 // why_are_you_alone
-let infospot10 = new PANOLENS.Infospot(450, '../images/location_01/why_are_you_alone.png');
-infospot10.position.set(1000, 500, 1000);
-infospot10.addEventListener('hover', () => {
+let infospot9 = new PANOLENS.Infospot(450, '../images/location_01/why_are_you_alone.png');
+infospot9.position.set(1000, 500, 1000);
+infospot9.addEventListener('hover', () => {
     document.querySelector('#why_are_you_alone_audio').play();
 });
 
 
-panorama.add(infospot, infospot2, infospot3, infospot4, infospot5, infospot6, infospot7, infospot8, infospot9, infospot10);
+panorama.add(infospot, infospot2, infospot3, infospot4, infospot5, infospot6, infospot7, infospot8, infospot9);
 
 viewer = new PANOLENS.Viewer({
     container: container,
@@ -87,5 +80,6 @@ viewer.add(panorama);
 
 $(window).on('load', () => {
     $('.loading_box').fadeOut("slow").hide();
+    $('#bg_audio').get(0).play();
 });
 

@@ -1,17 +1,11 @@
-.card {
-    background-color: #000 !important;
-}
-
-.card-body {
-    max-width: 100%;
-}
-
 .pin {
-    color: #fff;
+    color: #ff4646;
+    transition: transform .3s ease-out 0s;
 }
 
 .pin:hover {
-    color: #00FFFF;
+    color: #59bbe3;
+    transform: scale(1.5);
 }
 
 #map_box {
@@ -19,6 +13,7 @@
     background-size: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
+    overflow: auto;
     height: 100%;
     min-height: 100vh;
     padding: 0;
@@ -39,6 +34,12 @@
 }
 
 #location_01 {
-    grid-column: f3;
-    grid-row: f3;
+    margin-top: 2rem;
+    margin-left: rem;
+    grid-column: e3;
+    grid-row: e3;
+    align-self: center;
 }
+
+/* for mobile styles */
+@media screen and (max-width: 760px) {}
