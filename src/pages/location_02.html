@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Location 02</title>
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <!-- My CSS -->
+    <link rel=stylesheet href="../styles/locationStyle.css">
+    <link rel=stylesheet href="../styles/loadingStyle.css">
+    <!-- Three JS -->
+    <script type="text/javascript" src="../js/three.js"></script>
+    <!-- Panolens JS -->
+    <script type="text/javascript" src="../js/panolens.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loading_box">
+        <div>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="entry_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="modal-title">進入饒河夜市八德路端</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="poem" class="text-light"></div>
+
+    <div id="container"></div>
+
+    <audio id="bg_audio" loop>
+        <source src="../sounds/location_02/bg_02.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="can_or_not_audio">
+        <source src="../sounds/location_02/can_or_not.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="full_audio">
+        <source src="../sounds/location_02/full.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="how_much_audio">
+        <source src="../sounds/location_02/how_much.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="later_tonight_audio">
+        <source src="../sounds/location_02/later_tonight.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="what_drinks_you_want_audio">
+        <source src="../sounds/location_02/what_drinks_you_want.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+
+    <!-- My JS -->
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/location_02.js"></script>
+</body>
+
+</html>

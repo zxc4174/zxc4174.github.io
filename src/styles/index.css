@@ -41,5 +41,13 @@
     align-self: center;
 }
 
+#location_02 {
+    margin-top: 1rem;
+    grid-column: d8;
+    grid-row: d8;
+    align-self: center;
+    justify-self: end
+}
+
 /* for mobile styles */
 @media screen and (max-width: 760px) {}
