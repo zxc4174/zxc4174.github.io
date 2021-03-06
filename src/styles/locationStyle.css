@@ -1,12 +1,66 @@
 html,
 body {
+    font-family: 'adobe-fan-heiti-std', sans-serif !important;
     width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0;
 }
 
+@font-face {
+    font-family: 'adobe-fan-heiti-std';
+    src: url('../fonts/AdobeFanHeitiStd-Bold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+.close:focus {
+    outline: none !important;
+}
+
 #container {
     width: 100%;
     height: 100%;
+}
+
+#poem {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: fit-content;
+    height: fit-content;
+    max-width: 70%;
+    max-height: 70%;
+    padding: 1.5rem;
+    justify-content: center;
+    align-items: center;
+
+    /* position the div in center */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5%;
+    overflow: auto;
+    z-index: 9999;
+}
+
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: lightgray #59bbe3;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #59bbe3;
+    border-radius: 10%;
+    border: 3px solid lightgray;
 }
