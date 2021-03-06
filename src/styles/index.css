@@ -34,8 +34,8 @@
 }
 
 #location_01 {
-    margin-top: 2rem;
-    margin-left: rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
     grid-column: e3;
     grid-row: e3;
     align-self: center;

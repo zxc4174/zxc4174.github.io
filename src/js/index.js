@@ -1,3 +1,7 @@
+$(document).on("pagecreate", () => {
+    $.mobile.changePage("../../404.html");
+});
+
 $(window).on('load', () => {
     $('.loading_box').fadeOut("slow").hide();
     $('#entry_modal').modal('show');
