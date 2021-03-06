@@ -11,8 +11,14 @@ $('body').on('DOMSubtreeModified', '#poem', function () {
     $('#poem').show();
 });
 
+$('#download').on('click', () => {
+    const content = $('#poem_content').text();
+    console.log(content);
+    $('#download').attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
+});
+
 function appendHoverText(text) {
-    const div = document.getElementById('poem');
+    const div = document.getElementById('poem_content');
     div.innerHTML += text;
     div.scrollTop = div.scrollHeight;
 }
