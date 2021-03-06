@@ -47,7 +47,7 @@ body {
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: lightgray #59bbe3;
+    scrollbar-color: rgba(232, 232, 232, 1) rgba(0, 0, 0, 0.8);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -56,11 +56,11 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: lightgray;
+    background: rgba(232, 232, 232, 1);
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: #59bbe3;
+    background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10%;
-    border: 3px solid lightgray;
+    border: 3px solid rgba(232, 232, 232, 1);
 }
