@@ -2,7 +2,7 @@ let panorama, viewer, container;
 
 container = document.querySelector('#container');
 
-panorama = new PANOLENS.ImagePanorama('../images/location_01/bg_01.png');
+panorama = new PANOLENS.ImagePanorama('../images/location_01/bg_01.jpg');
 
 // i_just_know_that_audio
 let infospot = new PANOLENS.Infospot(600, '../images/location_01/i_just_know_that.png');
