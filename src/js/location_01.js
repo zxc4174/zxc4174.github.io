@@ -80,7 +80,8 @@ infospot9.addEventListener('hover', () => {
 panorama.add(infospot, infospot2, infospot3, infospot4, infospot5, infospot6, infospot7, infospot8, infospot9);
 
 viewer = new PANOLENS.Viewer({
-    container: container
+    container: container,
+    output: 'console'
 });
 viewer.add(panorama);
 
