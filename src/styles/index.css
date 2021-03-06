@@ -1,3 +1,7 @@
+a {
+    text-decoration: none !important;
+}
+
 .pin {
     color: #ff4646;
     transition: transform .3s ease-out 0s;
@@ -6,6 +10,14 @@
 .pin:hover {
     color: #59bbe3;
     transform: scale(1.5);
+}
+
+
+.pin-text {
+    color: white;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: rgba(167, 150, 120, 0.7);
 }
 
 #map_box {
@@ -30,23 +42,23 @@
         "g0 g1 g2 g3 g4 g5 g6 g7 g8 g9"
         "h0 h1 h2 h3 h4 h5 h6 h7 h8 h9"
         "i0 i1 i2 i3 i4 i5 i6 i7 i8 i9"
-        "j0 j1 j2 j3 j4 j5 j6 j7 j8 j9 ";
+        "j0 j1 j2 j3 j4 j5 j6 j7 j8 j9";
 }
 
 #location_01 {
-    margin-left: 0.5rem;
-    margin-bottom: 1rem;
     grid-column: e3;
     grid-row: e3;
     align-self: center;
+    justify-self: end;
 }
 
 #location_02 {
-    margin-top: 1rem;
+    margin-top: 2rem;
+    margin-right: 2rem;
     grid-column: d8;
     grid-row: d8;
     align-self: center;
-    justify-self: end
+    justify-self: center;
 }
 
 /* for mobile styles */
