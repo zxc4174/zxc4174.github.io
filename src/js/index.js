@@ -18,7 +18,8 @@ $('#download').on('click', () => {
 });
 
 function appendHoverText(text) {
-    const div = document.getElementById('poem_content');
-    div.innerHTML += text;
+    const poem_content = document.getElementById('poem_content');
+    poem_content.innerHTML += text;
+    const div = document.getElementById('poem');
     div.scrollTop = div.scrollHeight;
 }
