@@ -28,7 +28,7 @@
     float: left;
     width: 6px;
     height: 50px;
-    background: lightgray;
+    background: #fff;
     margin: 0 2px;
     -webkit-transform: scaleY(0.4);
     transform: scaleY(0.4);

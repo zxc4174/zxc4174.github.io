@@ -18,11 +18,11 @@ infospot2.addEventListener('hover', () => {
     document.querySelector('#do_not_be_afraid_audio').play();
 });
 
-// do_you_need_e_receipt
-let infospot3 = new PANOLENS.Infospot(130, '../images/location_01/do_you_need_e_receipt.png');
+// do_you_need_receipt
+let infospot3 = new PANOLENS.Infospot(130, '../images/location_01/do_you_need_receipt.png');
 infospot3.position.set(-80, -400, -1000);
 infospot3.addEventListener('hover', () => {
-    document.querySelector('#do_you_need_e_receipt_audio').play();
+    document.querySelector('#do_you_need_receipt_audio').play();
 });
 
 // he_said_i_have_too_much
