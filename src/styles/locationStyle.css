@@ -1,17 +1,12 @@
 html,
 body {
     font-family: 'adobe-fan-heiti-std', sans-serif !important;
+    font-weight: 600;
+    font-style: normal;
     width: 100%;
     height: 100%;
     overflow: hidden;
     margin: 0;
-}
-
-@font-face {
-    font-family: 'adobe-fan-heiti-std';
-    src: url('../fonts/AdobeFanHeitiStd-Bold.otf') format('opentype');
-    font-weight: 600;
-    font-style: normal;
 }
 
 .close:focus {
