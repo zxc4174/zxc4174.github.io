@@ -28,8 +28,8 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
     width: fit-content;
     height: fit-content;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 60%;
+    max-height: 60%;
     padding: 1.5rem;
     justify-content: center;
     align-items: center;
@@ -39,7 +39,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 5%;
+    border-radius: 1rem;
     overflow: auto;
     z-index: 9999;
 }
@@ -47,7 +47,7 @@ body {
 /* Works on Firefox */
 * {
     scrollbar-width: thin;
-    scrollbar-color: rgba(232, 232, 232, 1) rgba(0, 0, 0, 0.8);
+    scrollbar-color: rgba(232, 232, 232, 0.4) rgba(0, 0, 0, 0.4);
 }
 
 /* Works on Chrome, Edge, and Safari */
@@ -56,11 +56,13 @@ body {
 }
 
 *::-webkit-scrollbar-track {
-    background: rgba(232, 232, 232, 1);
+    background: rgba(232, 232, 232, 0.4);
+    margin: 1rem;
+    border-radius: 1rem;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10%;
-    border: 3px solid rgba(232, 232, 232, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 1rem;
+    border: 3px solid rgba(232, 232, 232, 0.4);
 }
