@@ -27,3 +27,7 @@ function appendHoverText(text) {
     const div = document.getElementById('poem');
     div.scrollTop = div.scrollHeight;
 }
+
+function playTextAudio(targetId) {
+    document.querySelector('#' + targetId).play();
+}
