@@ -5,6 +5,17 @@
     <meta charset="utf-8">
     <title>TAIPEI POETRY MAP</title>
     <link rel="icon" type="image/png" href="./src/images/icon.png">
+    <!-- adobe-fan-heiti-std -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'hat4yxg',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
     <!-- My CSS -->
     <link rel=stylesheet href="./src/styles/index.css">
     <link rel=stylesheet href="./src/styles/loadingStyle.css">
@@ -33,6 +44,7 @@
     </div>
 
     <div id="map_box">
+        <img id="map" src="./src/images/taipei_main_page.jpg" alt="taipei main page">
         <a id="location_01" href="./src/pages/location_01.html">
             <i class="fas fa-map-marker-alt fa-2x pin"></i>
             <span class="pin-text">Cross of Huaining St. and Hankou St.</span>

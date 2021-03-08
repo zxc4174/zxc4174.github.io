@@ -9,8 +9,16 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none !important;
+}
+
 .close:focus {
     outline: none !important;
+}
+
+.card-footer {
+    background-color: transparent !important;
 }
 
 #container {
