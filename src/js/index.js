@@ -55,7 +55,7 @@ $('button').on('click', (e) => {
 });
 
 // for resize
-$(window).on("resize", function () { $("#map").height($(window).height() * 0.8); map.invalidateSize(); }).trigger("resize");
+$(window).on("resize", function () { $("#map").height($(window).height()); map.invalidateSize(); }).trigger("resize");
 
 // for position
 map.on('click', function (e) {
