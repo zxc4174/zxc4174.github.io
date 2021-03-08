@@ -29,6 +29,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <!-- Leaflet JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 </head>
 
 <body>
@@ -43,20 +50,13 @@
         </div>
     </div>
 
-    <div id="map_box">
-        <img id="map" src="./src/images/taipei_main_page.jpg" alt="taipei main page">
-        <a id="location_01" href="./src/pages/location_01.html">
-            <i class="fas fa-map-marker-alt fa-2x pin"></i>
-            <span class="pin-text">Cross of Huaining St. and Hankou St.</span>
-        </a>
-        <a id="location_02" href="./src/pages/location_02.html">
-            <span class="pin-text">Raohe night market east</span>
-            <i class="fas fa-map-marker-alt fa-2x pin"></i>
-        </a>
+    <div id="map"></div>
+    <div id="controls">
+        <p>Activate Map Markers</p>
     </div>
 
-
     <!-- My JS -->
+    <script type="text/javascript" src="./src/js/common.js"></script>
     <script type="text/javascript" src="./src/js/index.js"></script>
 </body>
 

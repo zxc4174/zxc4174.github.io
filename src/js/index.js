@@ -1,33 +1,70 @@
-$(document).on("pagecreate", () => {
-    $.mobile.changePage("../../404.html");
+// 建立 Leaflet 地圖
+const map = L.map('map', {
+    maxZoom: 24,
+    minZoom: 1,
+    crs: L.CRS.Simple
+}).setView([1000, 0], 1);
+
+map.setMaxBounds(new L.LatLngBounds([0, 1000], [1000, 0]));
+
+const imageUrl = './src/images/taipei_main_page.jpg'
+const imageBounds = [[1000, 0], [0, 1000]];
+
+L.imageOverlay(imageUrl, imageBounds).addTo(map);
+
+const locationLayer = new L.FeatureGroup();
+const coords = [
+    { location: 'Cross of Huaining St. and Hankou St.', position: [511, 307.5], link: './src/pages/location_01.html' },
+    { location: 'Raohe night market east', position: [603, 877], link: './src/pages/location_02.html' }];
+let markerArray = [];
+
+$.each(coords, function (i, target) {
+    // create the button
+    $('#controls').append('<button data-id=' + i + ' class="btn btn-info mr-1">' + target.location + '</button>')
+
+    const marker = L.marker(target.position, {
+        id: i
+    });
+
+    marker.bindPopup('<strong>' + target.location + '</strong>', { autoClose: false, closeOnClick: false });
+
+    marker.on('mouseover', (e) => {
+        e.target.openPopup();
+    });
+
+    // marker.on('mouseout', (e) => {
+    //     e.target.closePopup();
+    // });
+
+    marker.on('click', (e) => {
+        location.href = target.link;
+    });
+
+    locationLayer.addLayer(marker);
+
+    markerArray[i] = marker;
 });
 
-$(window).on('load', () => {
-    $('.loading_box').fadeOut("slow").hide();
-    $('#entry_modal').modal('show');
+
+locationLayer.addTo(map).eachLayer(marker => {
+    marker.openPopup();
 });
 
-$("#entry_modal").on("hidden.bs.modal", () => {
-    $('#bg_audio').get(0).play();
+$('button').on('click', (e) => {
+    map.setView(markerArray[$(e.target).data('id')].getLatLng(), 1);
 });
 
-$('body').on('DOMSubtreeModified', '#poem', function () {
-    $('#poem').show();
+// for resize
+$(window).on("resize", function () { $("#map").height($(window).height() * 0.8); map.invalidateSize(); }).trigger("resize");
+
+// for position
+map.on('click', function (e) {
+    const coord = e.latlng;
+    const lat = coord.lat;
+    const lng = coord.lng;
+    console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
 });
 
-$('#download').on('click', () => {
-    const content = $('#poem_content').text();
-    console.log(content);
-    $('#download').attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
-});
-
-function appendHoverText(text) {
-    const poem_content = document.getElementById('poem_content');
-    poem_content.innerHTML += text;
-    const div = document.getElementById('poem');
-    div.scrollTop = div.scrollHeight;
-}
-
-function playTextAudio(targetId) {
-    document.querySelector('#' + targetId).play();
+function clickZoom(e) {
+    map.setView(e.target.getLatLng(), 5);
 }
