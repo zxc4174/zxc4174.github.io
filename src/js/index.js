@@ -1,6 +1,6 @@
 // 建立 Leaflet 地圖
 const map = L.map('map', {
-    maxZoom: 4,
+    maxZoom: 3,
     minZoom: 1,
     crs: L.CRS.Simple
 }).setView([500, 500], 1);
