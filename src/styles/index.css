@@ -9,8 +9,24 @@ a {
     text-decoration: none !important;
 }
 
+#map {
+    background-color: black;
+}
+
+.text-gold {
+    color: #fbdc5f;
+}
+
+.btn-gray {
+    background-color: rgba(191, 210, 223, 1) !important;
+}
+
+.btn-gray:hover {
+    background-color: rgba(137, 156, 168, 1) !important;
+}
+
 #controls {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     margin: 1rem;
     z-index: 9999;
     position: absolute;
@@ -18,6 +34,7 @@ a {
     bottom: 3%;
     left: 0;
 }
+
 
 /* for mobile styles */
 @media screen and (max-width: 760px) {}
