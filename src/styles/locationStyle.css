@@ -17,6 +17,14 @@ a {
     outline: none !important;
 }
 
+.panorama-icon {
+    position: absolute;
+    max-width: 7rem;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .card-footer {
     background-color: transparent !important;
 }

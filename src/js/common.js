@@ -5,6 +5,7 @@ $(window).on('load', () => {
 
 $("#entry_modal").on("hidden.bs.modal", () => {
     $('#bg_audio').get(0).play();
+    $('.panorama-icon').fadeOut("slow").hide();
 });
 
 $('body').on('DOMSubtreeModified', '#poem', function () {
