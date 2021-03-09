@@ -13,6 +13,10 @@ a {
     background-color: black;
 }
 
+.leaflet-popup-close-button {
+    margin: 2px !important;
+}
+
 .btn-gray {
     background-color: rgba(191, 210, 223, 1) !important;
 }
