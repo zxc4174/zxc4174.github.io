@@ -75,3 +75,7 @@ a {
     border-radius: 1rem;
     border: 3px solid rgba(232, 232, 232, 0.4);
 }
+
+
+/* for mobile styles */
+@media screen and (max-width: 760px) {}
