@@ -18,11 +18,9 @@ a {
 }
 
 .panorama-icon {
-    position: absolute;
-    max-width: 7rem;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    max-width: 2rem;
+    display: block;
+    margin: auto;
 }
 
 .card-footer {
