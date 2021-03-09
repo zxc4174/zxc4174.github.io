@@ -8,7 +8,8 @@ const map = L.map('map', {
 const customIcon = L.icon({
     iconUrl: './src/images/pin.png',
     iconSize: [30, 45],
-    popupAnchor: [0, -20]
+    popupAnchor: [0, -20],
+    className: 'customIcon'
 });
 
 map.setMaxBounds(new L.LatLngBounds([0, 1000], [1000, 0]));
@@ -33,7 +34,7 @@ $.each(coords, function (i, target) {
         icon: customIcon
     });
 
-    marker.bindPopup('<strong>' + target.location + '</strong>', { autoClose: false, closeOnClick: false });
+    marker.bindPopup('<strong class="m-1">' + target.location + '</strong>', { autoClose: false, closeOnClick: false });
 
     marker.on('mouseover', (e) => {
         e.target.openPopup();
@@ -75,3 +76,19 @@ map.on('click', function (e) {
 function clickZoom(e) {
     map.setView(e.target.getLatLng(), 5);
 }
+
+// function setIconSize(e) {
+//     var i;
+//     var zoomLevel = map.getZoom();
+//     var x = 100 * zoomLevel * 0.3;
+//     var y = 150 * zoomLevel * 0.3;
+//     var iconElements = document.getElementsByClassName('customIcon');
+//     for (i = 0; i < iconElements.length; i++) {
+//         iconElements[i].style.width = x + 'px';
+//         iconElements[i].style.height = y + 'px';
+//         console.log("width: " + iconElements[i].style.width);
+//         console.log("height: " + iconElements[i].style.height);
+//     }
+// };
+
+// map.on('zoomend', setIconSize);
