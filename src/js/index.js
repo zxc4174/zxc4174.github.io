@@ -47,8 +47,7 @@ $.each(coords, function (i, target) {
 
     marker.on('click', (e) => {
         //location.href = target.link;
-        $('#panorama_dialog').css("display", "block").attr('src', target.link);
-
+        $("body").append('<iframe id="panorama_dialog" src="' + target.link + '"></iframe > ');
     });
 
     locationLayer.addLayer(marker);
