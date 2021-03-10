@@ -40,12 +40,15 @@ $.each(coords, function (i, target) {
         e.target.openPopup();
     });
 
-    // marker.on('mouseout', (e) => {
-    //     e.target.closePopup();
-    // });
+    marker.on('mouseout', (e) => {
+        e.target.openPopup();
+        // e.target.closePopup();
+    });
 
     marker.on('click', (e) => {
-        location.href = target.link;
+        //location.href = target.link;
+        $('#panorama_dialog').css("display", "block").attr('src', target.link);
+
     });
 
     locationLayer.addLayer(marker);
@@ -92,3 +95,8 @@ function clickZoom(e) {
 // };
 
 // map.on('zoomend', setIconSize);
+
+function inertIframe(id, src) {
+    console.log();
+    $(id).attr('src', src);
+}

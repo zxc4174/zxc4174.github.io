@@ -18,6 +18,15 @@ $('#download').on('click', () => {
     $('#download').attr('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(content));
 });
 
+$('#btn-close').on('click', () => {
+    $('#panorama_dialog', window.parent.document).hide();
+    $('audio').each(function () {
+        this.pause(); // Stop playing
+        this.currentTime = 0; // Reset time
+    });
+});
+
+
 function appendHoverText(text) {
     const poem_content = document.getElementById('poem_content');
     poem_content.innerHTML += text;
