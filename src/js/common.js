@@ -19,7 +19,7 @@ $('#download').on('click', () => {
 });
 
 $('#btn-close').on('click', () => {
-    $('#panorama_dialog', window.parent.document).hide();
+    $('#panorama_dialog', window.parent.document).remove();
     $('audio').each(function () {
         this.pause(); // Stop playing
         this.currentTime = 0; // Reset time
