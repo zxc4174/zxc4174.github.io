@@ -20,6 +20,10 @@ $('#download').on('click', () => {
 
 $('#btn-close').on('click', () => {
     $('#panorama_dialog', window.parent.document).hide();
+    $('audio').each(function () {
+        this.pause(); // Stop playing
+        this.currentTime = 0; // Reset time
+    });
 });
 
 
