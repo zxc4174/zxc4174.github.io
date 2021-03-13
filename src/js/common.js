@@ -1,6 +1,6 @@
 $(window).on('load', () => {
     $('.loading_box').fadeOut("slow").hide();
-    $('#entry_modal').modal('show');
+    $('#controls').fadeOut("slow").show();
 });
 
 $("#entry_modal").on("hidden.bs.modal", () => {

@@ -76,6 +76,10 @@ infospot9.addEventListener('hoverenter', () => {
     playTextAudio('why_are_you_alone_audio');
 });
 
+panorama.addEventListener('load', () => {
+    $('.loading_box').fadeOut("slow").hide();
+    $('#entry_modal').modal('show');
+});
 
 panorama.add(infospot,
     infospot2,

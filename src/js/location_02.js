@@ -144,6 +144,11 @@ panorama.add(
     infospot15,
 );
 
+panorama.addEventListener('load', () => {
+    $('.loading_box').fadeOut("slow").hide();
+    $('#entry_modal').modal('show');
+});
+
 viewer = new PANOLENS.Viewer({
     container: container,
     output: 'console'
