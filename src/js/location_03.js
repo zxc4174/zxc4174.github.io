@@ -88,7 +88,7 @@ infospot10.addEventListener('hoverenter', () => {
 let infospot11 = new PANOLENS.Infospot(4000, '../images/location_03/weird.png');
 infospot11.position.set(-849.63, -4500, 91.18);
 infospot11.addEventListener('hoverenter', () => {
-    appendHoverText('她是不是怪怪的 ');
+    appendHoverText('他是不是怪怪的 ');
     playTextAudio('weird_audio');
 });
 
@@ -100,7 +100,10 @@ infospot12.addEventListener('hoverenter', () => {
     playTextAudio('your_fault_audio');
 });
 
-
+panorama.addEventListener('load', () => {
+    $('.loading_box').fadeOut("slow").hide();
+    $('#entry_modal').modal('show');
+});
 
 panorama.add(
     infospot,

@@ -77,8 +77,14 @@ map.on('click', function (e) {
     console.log("You clicked the map at latitude: " + lat + " and longitude: " + lng);
 });
 
+
 function clickZoom(e) {
     map.setView(e.target.getLatLng(), 5);
+}
+
+function inertIframe(id, src) {
+    console.log();
+    $(id).attr('src', src);
 }
 
 // function setIconSize(e) {
@@ -97,7 +103,3 @@ function clickZoom(e) {
 
 // map.on('zoomend', setIconSize);
 
-function inertIframe(id, src) {
-    console.log();
-    $(id).attr('src', src);
-}
