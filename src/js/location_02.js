@@ -88,7 +88,7 @@ infospot10.addEventListener('hoverenter', () => {
 let infospot11 = new PANOLENS.Infospot(500, '../images/location_02/here_or_not.png');
 infospot11.position.set(406.65, 774.90, -213.18);
 infospot11.addEventListener('hoverenter', () => {
-    appendHoverText('在不再 ');
+    appendHoverText('在不在 ');
     playTextAudio('here_or_not_audio');
 });
 
