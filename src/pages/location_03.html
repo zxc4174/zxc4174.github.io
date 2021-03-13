@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cross of Songren Rd. and Xinyi Rd.</title>
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <!-- adobe-fan-heiti-std -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'hat4yxg',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SM48MD6Q3L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-SM48MD6Q3L');
+    </script>
+    <!-- My CSS -->
+    <link rel=stylesheet href="../styles/locationStyle.css">
+    <link rel=stylesheet href="../styles/loadingStyle.css">
+    <!-- Three JS -->
+    <script type="text/javascript" src="../js/three.js"></script>
+    <!-- Panolens JS -->
+    <script type="text/javascript" src="../js/panolens.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loading_box">
+        <div>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <button type="button" id="btn-close" class="close">
+        <span>&times;</span>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="entry_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="modal-title text-center">
+                        進入松仁路和信義路十字路口
+                        <br />
+                        Cross of Songren Rd. and Xinyi Rd.
+                    </h6>
+                    <img class="panorama-icon mt-1" src="../images/360-degrees.png"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="poem" class="text-light">
+        <div id="poem_content" class="card-body"></div>
+        <div class="card-footer text-right">
+            <a id="download" class="btn-sm text-light" href="" download="poem.txt">Download</a>
+        </div>
+    </div>
+
+    <div id="container"></div>
+
+    <audio id="bg_audio" loop>
+        <source src="../sounds/location_03/bg_03.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="all_ok_audio">
+        <source src="../sounds/location_03/all_ok.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="back_home_audio">
+        <source src="../sounds/location_03/back_home.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="cannot_see_audio">
+        <source src="../sounds/location_03/cannot_see.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="excuse_audio">
+        <source src="../sounds/location_03/excuse.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="four_months_audio">
+        <source src="../sounds/location_03/four_months.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="funny_audio">
+        <source src="../sounds/location_03/funny.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="no_way_audio">
+        <source src="../sounds/location_03/no_way.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="run_audio">
+        <source src="../sounds/location_03/run.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="so_great_audio">
+        <source src="../sounds/location_03/so_great.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="summer_vacation_audio">
+        <source src="../sounds/location_03/summer_vacation.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="weird_audio">
+        <source src="../sounds/location_03/weird.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="your_fault_audio">
+        <source src="../sounds/location_03/your_fault.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+
+
+    <!-- My JS -->
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/location_03.js"></script>
+</body>
+
+</html>

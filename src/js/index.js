@@ -22,7 +22,9 @@ L.imageOverlay(imageUrl, imageBounds).addTo(map);
 const locationLayer = new L.FeatureGroup();
 const coords = [
     { location: 'Cross of Huaining St. and Hankou St.', position: [379.75, 410.5], link: './src/pages/location_01.html' },
-    { location: 'Raohe night market east', position: [419, 902.8125], link: './src/pages/location_02.html' }];
+    { location: 'Raohe night market east', position: [419, 902.8125], link: './src/pages/location_02.html' },
+    { location: 'Cross of Songren Rd. and Xinyi Rd.', position: [255.125, 830.875], link: './src/pages/location_03.html' },
+];
 let markerArray = [];
 
 $.each(coords, function (i, target) {
