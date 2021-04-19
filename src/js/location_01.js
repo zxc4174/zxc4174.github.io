@@ -28,12 +28,12 @@ infospot3.addEventListener('hoverenter', () => {
     playTextAudio('do_you_need_receipt_audio');
 });
 
-// he_said_i_have_too_much
-let infospot4 = new PANOLENS.Infospot(1500, '../images/location_01/he_said_i_have_too_much.png');
-infospot4.position.set(-1800, 1000, -1000);
+// boss
+let infospot4 = new PANOLENS.Infospot(2500, '../images/location_01/boss.png');
+infospot4.position.set(-2780.04, 962.12, -3783.63);
 infospot4.addEventListener('hoverenter', () => {
-    appendHoverText('他說我做過太多太雜，我做過餐飲業，也做過飲料店，最短的只有半年 ');
-    playTextAudio('he_said_i_have_too_much_audio');
+    appendHoverText('我跟老闆講一下 ');
+    playTextAudio('boss_audio');
 });
 
 // nothing
@@ -54,9 +54,9 @@ infospot6.addEventListener('hoverenter', () => {
 
 // wait_me
 let infospot7 = new PANOLENS.Infospot(270, '../images/location_01/wait_me.png');
-infospot7.position.set(-1150, 450, 1000);
+infospot7.position.set(-1169.34, 469.62, 983.02);
 infospot7.addEventListener('hoverenter', () => {
-    appendHoverText('等我，等我，等一下 ');
+    appendHoverText('等一下 ');
     playTextAudio('wait_me_audio');
 });
 
@@ -76,6 +76,30 @@ infospot9.addEventListener('hoverenter', () => {
     playTextAudio('why_are_you_alone_audio');
 });
 
+// look
+let infospot10 = new PANOLENS.Infospot(700, '../images/location_01/look.png');
+infospot10.position.set(-3756.54, 3290.27, -108.88);
+infospot10.addEventListener('hoverenter', () => {
+    appendHoverText('你要不要看 ');
+    playTextAudio('look_audio');
+});
+
+// rain
+let infospot11 = new PANOLENS.Infospot(2000, '../images/location_01/rain.png');
+infospot11.position.set(4152.55, 2777.75, 4.34);
+infospot11.addEventListener('hoverenter', () => {
+    appendHoverText('有飄雨嗎 ');
+    playTextAudio('rain_audio');
+});
+
+// sleep
+let infospot12 = new PANOLENS.Infospot(4000, '../images/location_01/sleep.png');
+infospot12.position.set(127.99, -60, 4960.26);
+infospot12.addEventListener('hoverenter', () => {
+    appendHoverText('進入睡眠狀態 ');
+    playTextAudio('sleep_audio');
+});
+
 panorama.addEventListener('load', () => {
     $('.loading_box').fadeOut("slow").hide();
     $('#entry_modal').modal('show');
@@ -89,7 +113,10 @@ panorama.add(infospot,
     infospot6,
     infospot7,
     infospot8,
-    infospot9
+    infospot9,
+    infospot10,
+    infospot11,
+    infospot12,
 );
 
 viewer = new PANOLENS.Viewer({
