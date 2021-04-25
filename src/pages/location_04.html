@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Cross of Xinyi Rd. and Yongkang St.</title>
+    <link rel="icon" type="image/png" href="../images/icon.png">
+    <!-- adobe-fan-heiti-std -->
+    <script>
+        (function (d) {
+            var config = {
+                kitId: 'hat4yxg',
+                scriptTimeout: 3000,
+                async: true
+            },
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+        })(document);
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158894255-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-158894255-2');
+        gtag('config', 'G-E14YH5KEH5');
+    </script>
+    <!-- My CSS -->
+    <link rel=stylesheet href="../styles/locationStyle.css">
+    <link rel=stylesheet href="../styles/loadingStyle.css">
+    <!-- Three JS -->
+    <script type="text/javascript" src="../js/three.js"></script>
+    <!-- Panolens JS -->
+    <script type="text/javascript" src="../js/panolens.js"></script>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- loading -->
+    <div class="loading_box">
+        <div>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </div>
+    </div>
+
+    <button type="button" id="btn-close" class="close">
+        <span>&times;</span>
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="entry_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h6 class="modal-title text-center">
+                        進入永康街和信義路十字路口
+                        <br />
+                        Cross of Xinyi Rd. and Yongkang St.
+                    </h6>
+                    <img class="panorama-icon mt-1" src="../images/360-degrees.png"></img>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="poem" class="text-light">
+        <div id="poem_content" class="card-body"></div>
+        <div class="card-footer text-right">
+            <a id="download" class="btn-sm text-light" href="" download="poem.txt">Download</a>
+        </div>
+    </div>
+
+    <div id="container"></div>
+
+    <audio id="bg_audio" loop>
+        <source src="../sounds/location_04/bg_04.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="a_little_audio">
+        <source src="../sounds/location_04/a_little.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="come_audio">
+        <source src="../sounds/location_04/come.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="do_not_need_audio">
+        <source src="../sounds/location_04/do_not_need.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="feel_it_audio">
+        <source src="../sounds/location_04/feel_it.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="good_audio">
+        <source src="../sounds/location_04/good.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="irony_audio">
+        <source src="../sounds/location_04/irony.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="not_bad_audio">
+        <source src="../sounds/location_04/not_bad.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="not_listening_audio">
+        <source src="../sounds/location_04/not_listening.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="see_you_audio">
+        <source src="../sounds/location_04/see_you.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+    <audio id="take_a_photo_audio">
+        <source src="../sounds/location_04/take_a_photo.mp3" type="audio/mpeg">
+        </source>
+    </audio>
+
+
+    <!-- My JS -->
+    <script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/location_04.js"></script>
+</body>
+
+</html>
