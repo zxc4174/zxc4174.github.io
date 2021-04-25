@@ -24,12 +24,13 @@ const coords = [
     { location: 'Cross of Huaining St. and Hankou St.', position: [379.75, 410.5], link: './src/pages/location_01.html' },
     { location: 'Raohe night market east', position: [419, 902.8125], link: './src/pages/location_02.html' },
     { location: 'Cross of Songren Rd. and Xinyi Rd.', position: [255.125, 830.875], link: './src/pages/location_03.html' },
+    { location: 'Cross of Xinyi Rd. and Yongkang St.', position: [255.125, 531.984141172526], link: './src/pages/location_04.html' },
 ];
 let markerArray = [];
 
 $.each(coords, function (i, target) {
     // create the button
-    $('#controls').append('<button data-id=' + i + ' class="btn btn-gray mr-1">' + target.location + '</button>')
+    $('#controls').append('<button data-id=' + i + ' class="btn btn-gray m-1">' + target.location + '</button>')
 
     const marker = L.marker(target.position, {
         id: i,
